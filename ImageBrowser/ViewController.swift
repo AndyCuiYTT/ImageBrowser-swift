@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        let vc = XGImageBrowserController(imagesUrl: [], currentIndex: 3)
+        self.present(vc, animated: true, completion: nil)
+    }
+
 
 }
 
